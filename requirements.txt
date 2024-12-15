@@ -1,0 +1,6 @@
+pytest
+pandas
+Flask
+scikit-learn
+requests
+flask_sqlalchemy

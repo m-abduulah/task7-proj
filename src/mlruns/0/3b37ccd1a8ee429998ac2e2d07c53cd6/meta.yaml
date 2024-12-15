@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3b37ccd1a8ee429998ac2e2d07c53cd6/artifacts
+end_time: 1733445515505
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3b37ccd1a8ee429998ac2e2d07c53cd6
+run_name: gregarious-stork-990
+run_uuid: 3b37ccd1a8ee429998ac2e2d07c53cd6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733445498776
+status: 4
+tags: []
+user_id: abdul

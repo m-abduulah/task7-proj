@@ -1,0 +1,31 @@
+name: PUSH Image to DOCKER HUB
+on: 
+    push:
+        branches:
+            - "test"
+
+jobs:
+    hub_push:
+        name: Pushing the Docker image to the Docker Hub
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out the repo
+              uses: actions/checkout@v4
+
+            - name: Login to Docker Hub
+              run: |
+                docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+            - name: Build Docker Image
+              run: |
+                docker build --tag class-act-7 .
+            - name: Push to Hub
+              run: |
+                docker tag class-act-7 ${{ secrets.DOCKER_USERNAME }}/class-act-7
+                docker push ${{ secrets.DOCKER_USERNAME }}/class-act-7
+
+    
+
+
+
+
