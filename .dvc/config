@@ -1,0 +1,8 @@
+[core]
+    remote = act7remote2
+['remote "act7remote"']
+    url = gdrive://1Axq6JanH-9Pgx4QoRPjBZ_ZmMallStbc
+['remote "act7remote2"']
+    url = gdrive://1Axq6JanH-9Pgx4QoRPjBZ_ZmMallStbc
+    gdrive_client_id = 
+    gdrive_client_secret = 
