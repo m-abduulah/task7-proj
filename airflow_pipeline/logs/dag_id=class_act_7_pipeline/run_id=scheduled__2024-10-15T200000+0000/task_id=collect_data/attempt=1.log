@@ -1,0 +1,6 @@
+[2024-12-06T00:25:29.689+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-06T00:25:30.091+0000] {taskinstance.py:2603} INFO - Dependencies not met for <TaskInstance: class_act_7_pipeline.collect_data scheduled__2024-10-15T20:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-12-06T00:25:30.091575+00:00 and task will be retried at 2024-12-06T00:30:23.214323+00:00.
+[2024-12-06T00:25:30.424+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-12-06T00:28:34.497+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-06T00:28:34.838+0000] {taskinstance.py:2603} INFO - Dependencies not met for <TaskInstance: class_act_7_pipeline.collect_data scheduled__2024-10-15T20:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-12-06T00:28:34.837796+00:00 and task will be retried at 2024-12-06T00:30:23.214323+00:00.
+[2024-12-06T00:28:35.140+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run

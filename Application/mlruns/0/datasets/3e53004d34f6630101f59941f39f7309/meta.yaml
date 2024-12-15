@@ -1,0 +1,10 @@
+digest: 85c9cfcd
+name: dataset
+profile: '{"num_rows": 50, "num_elements": 200}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "Humidity (%)", "required":
+  true}, {"type": "double", "name": "Wind Speed (m/s)", "required": true}, {"type":
+  "double", "name": "Cloud Cover (%)", "required": true}, {"type": "double", "name":
+  "Precipitation (mm)", "required": true}]}'
+source: '{"tags": {"mlflow.user": "DELL", "mlflow.source.name": "training.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "b35d899f3f706aee66bd617be48e4548488d3533"}}'
+source_type: code

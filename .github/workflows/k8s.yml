@@ -1,0 +1,39 @@
+name: Deploy to Kubernetes Cluster
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  deploy:
+    name: Deploying the application to Kubernetes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+
+      - name: Set up Minikube
+        uses: medyagh/setup-minikube@latest
+
+      - name: Start Minikube
+        run: |
+          minikube start --driver=docker
+
+      - name: Pull Docker image
+        run: |
+          docker pull ${{ secrets.DOCKER_USERNAME }}/class-act-7:latest
+
+      - name: Deploy application to Kubernetes
+        run: |
+          kubectl create deployment test-app --image=${{ secrets.DOCKER_USERNAME }}/class-act-7:latest
+          kubectl expose deployment test-app --type=NodePort --port=9875
+
+      - name: Verify deployment
+        run: |
+          kubectl get all

@@ -1,0 +1,21 @@
+[2024-12-04T23:58:06.586+0000] {processor.py:186} INFO - Started process (PID=150) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:58:06.600+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2024-12-04T23:58:06.607+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:06.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:58:06.667+0000] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:58:06.890+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:06.890+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-04T23:58:07.037+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:07.032+0000] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
+[2024-12-04T23:58:07.352+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.821 seconds
+[2024-12-04T23:58:54.741+0000] {processor.py:186} INFO - Started process (PID=214) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:58:54.748+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2024-12-04T23:58:54.751+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:54.751+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:58:54.779+0000] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:58:54.850+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:54.850+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-04T23:58:54.907+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:54.907+0000] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
+[2024-12-04T23:58:54.962+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.242 seconds
+[2024-12-04T23:59:30.264+0000] {processor.py:186} INFO - Started process (PID=284) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:59:30.266+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2024-12-04T23:59:30.270+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:59:30.269+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:59:30.295+0000] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-12-04T23:59:30.345+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:59:30.344+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-04T23:59:30.393+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:59:30.393+0000] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
+[2024-12-04T23:59:30.465+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.217 seconds

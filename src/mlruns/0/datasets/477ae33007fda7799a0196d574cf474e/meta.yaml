@@ -1,0 +1,8 @@
+digest: 9d9a15a8
+name: dataset
+profile: '{"num_rows": 1, "num_elements": 2}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "Humid", "required": true},
+  {"type": "double", "name": "Wind Sp", "required": true}]}'
+source: '{"tags": {"mlflow.user": "abdul", "mlflow.source.name": ".\\training.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "217d7d7eed07b714c056cddde6d1b615ac2297a2"}}'
+source_type: code

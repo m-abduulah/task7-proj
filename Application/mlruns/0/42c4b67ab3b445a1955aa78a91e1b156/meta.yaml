@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/42c4b67ab3b445a1955aa78a91e1b156/artifacts
+end_time: 1733579846876
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 42c4b67ab3b445a1955aa78a91e1b156
+run_name: judicious-stoat-556
+run_uuid: 42c4b67ab3b445a1955aa78a91e1b156
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733579821876
+status: 3
+tags: []
+user_id: DELL

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1733579846831
+current_stage: None
+description: ''
+last_updated_timestamp: 1733579846831
+name: Temperature_Predictor_2
+run_id: 42c4b67ab3b445a1955aa78a91e1b156
+run_link: ''
+source: mlflow-artifacts:/0/42c4b67ab3b445a1955aa78a91e1b156/artifacts/sklearn-model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/0/42c4b67ab3b445a1955aa78a91e1b156/artifacts/sklearn-model
+user_id: null
+version: 1

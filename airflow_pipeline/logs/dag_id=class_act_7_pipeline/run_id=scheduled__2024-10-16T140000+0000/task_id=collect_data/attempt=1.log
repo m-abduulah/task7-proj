@@ -1,0 +1,4 @@
+[2024-12-06T00:31:12.646+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-06T00:31:14.898+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: class_act_7_pipeline.collect_data scheduled__2024-10-16T14:00:00+00:00 [queued]>
+[2024-12-06T00:31:15.897+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: class_act_7_pipeline.collect_data scheduled__2024-10-16T14:00:00+00:00 [queued]>
+[2024-12-06T00:31:15.928+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
