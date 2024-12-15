@@ -1,0 +1,11 @@
+/config.local
+/tmp
+/cache
+
+airflow_pipeline\config\
+airflow_pipeline\logs\
+airflow_pipeline\plugins\
+.dvc
+airflow_pipeline\dags\__pycache__
+src\mlartifacts
+src\mlruns
