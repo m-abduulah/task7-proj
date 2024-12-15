@@ -1,0 +1,28 @@
+[2024-12-05T00:18:12.931+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T00:18:13.147+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: class_act_7_pipeline.preprocess_data scheduled__2024-10-14T00:00:00+00:00 [queued]>
+[2024-12-05T00:18:13.243+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: class_act_7_pipeline.preprocess_data scheduled__2024-10-14T00:00:00+00:00 [queued]>
+[2024-12-05T00:18:13.254+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2024-12-05T00:18:13.585+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): preprocess_data> on 2024-10-14 00:00:00+00:00
+[2024-12-05T00:18:13.695+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1226) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-05T00:18:13.710+0000] {standard_task_runner.py:72} INFO - Started process 1326 to run task
+[2024-12-05T00:18:13.717+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'class_act_7_pipeline', 'preprocess_data', 'scheduled__2024-10-14T00:00:00+00:00', '--job-id', '190', '--raw', '--subdir', 'DAGS_FOLDER/***_pipeline.py', '--cfg-path', '/tmp/tmpqr5b9ije']
+[2024-12-05T00:18:13.733+0000] {standard_task_runner.py:105} INFO - Job 190: Subtask preprocess_data
+[2024-12-05T00:18:14.384+0000] {task_command.py:467} INFO - Running <TaskInstance: class_act_7_pipeline.preprocess_data scheduled__2024-10-14T00:00:00+00:00 [running]> on host cff371549a6e
+[2024-12-05T00:18:15.282+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='abdulrahmanbutt7273@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='class_act_7_pipeline' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-14T00:00:00+00:00'
+[2024-12-05T00:18:15.332+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-05T00:18:15.344+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-05T00:18:15.357+0000] {logging_mixin.py:190} INFO - Current task name:preprocess_data state:running start_date:2024-12-05 00:18:13.169729+00:00
+[2024-12-05T00:18:15.361+0000] {logging_mixin.py:190} INFO - Dag name:class_act_7_pipeline and current dag run status:running
+[2024-12-05T00:18:15.366+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T00:18:15.488+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-05T00:18:15.629+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T00:18:15.644+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=class_act_7_pipeline, task_id=preprocess_data, run_id=scheduled__2024-10-14T00:00:00+00:00, execution_date=20241014T000000, start_date=20241205T001813, end_date=20241205T001815
+[2024-12-05T00:18:15.779+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-12-05T00:18:15.782+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-12-05T00:18:15.784+0000] {logging_mixin.py:190} INFO - Dag name:class_act_7_pipeline queued_at:2024-12-05 00:15:59.109652+00:00
+[2024-12-05T00:18:15.806+0000] {logging_mixin.py:190} INFO - Task hostname:cff371549a6e operator:PythonOperator
+[2024-12-05T00:18:16.092+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-05T00:18:16.205+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T00:18:16.217+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

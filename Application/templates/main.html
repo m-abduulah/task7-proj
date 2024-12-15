@@ -1,0 +1,203 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #0e4c92;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logout {
+            color: white;
+            text-decoration: none;
+            background: #d9534f;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .logout:hover {
+            background: #c9302c;
+        }
+        .container {
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #0e4c92;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #083b70;
+        }
+        .prediction {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #0e4c92;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span>Prediction App</span>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+    <div class="container">
+        <form method="POST" action="/predict">
+            <input type="number" name="humid" placeholder="Humidity (%)" required>
+            <input type="number" name="wind_sp" placeholder="Wind Speed (km/h)" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction is not none %}
+        <div class="prediction">Predicted Temperature: {{ prediction }} °C</div>
+        {% endif %}
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #b8bfd6;  /* Light gray background for contrast */
+        }
+        /* Navbar Styling */
+        .navbar {
+            background-color: #19335a; /* Red background for the header */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+        }
+        .navbar span {
+            font-weight: bold;
+        }
+        .logout {
+            color: white;
+            text-decoration: none;
+            background: #ff0d05;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .logout:hover {
+            background: #19335a;
+        }
+        /* Container to hold the form */
+        .container {
+            padding: 40px;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #f3f6ff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input {
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            border-color: #19335a;  /* Red border on focus */
+        }
+        button {
+            padding: 12px;
+            background-color: #19335a; /* Red button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #8fc8eb; /* Darker red on hover */
+        }
+        /* Prediction Display */
+        .prediction {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+            color: #19335a; /* Red text for prediction */
+            font-weight: bold;
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .navbar {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span>Prediction App</span>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+    <div class="container">
+        <h1>Enter Weather Data</h1>
+        <form method="POST" action="/predict">
+            <input type="number" name="humid" placeholder="Humidity (%)" required>
+            <input type="number" name="wind_sp" placeholder="Wind Speed (km/h)" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction is not none %}
+        <div class="prediction">Predicted Temperature: {{ prediction }} °C</div>
+        {% endif %}
+    </div>
+</body>
+</html>

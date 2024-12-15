@@ -1,0 +1,94 @@
+[2024-12-04T23:57:12.086+0000] {processor.py:186} INFO - Started process (PID=78) to work on /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:57:12.089+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_pipeline.py for tasks to queue
+[2024-12-04T23:57:12.103+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:12.101+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:57:12.529+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:12.357+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/airflow_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_pipeline.py", line 6, in <module>
+    from src.data_processing import preprocess_data
+  File "/opt/airflow/dags/src/data_processing.py", line 2, in <module>
+    from sklearn.preprocessing import StandardScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2024-12-04T23:57:12.558+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:57:12.858+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_pipeline.py took 0.819 seconds
+[2024-12-04T23:57:39.302+0000] {processor.py:186} INFO - Started process (PID=126) to work on /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:57:39.317+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_pipeline.py for tasks to queue
+[2024-12-04T23:57:39.336+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:39.335+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:57:40.605+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:40.283+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/airflow_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_pipeline.py", line 6, in <module>
+    from src.data_processing import preprocess_data
+  File "/opt/airflow/dags/src/data_processing.py", line 2, in <module>
+    from sklearn.preprocessing import StandardScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2024-12-04T23:57:40.661+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:57:41.660+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:41.658+0000] {taskinstance.py:3313} ERROR - {'DAG Id': 'class_act_7_pipeline', 'Task Id': 'collect_data', 'Run Id': 'scheduled__2024-10-11T23:00:00+00:00', 'Hostname': 'b3594cb83583', 'External Executor Id': '7c7975a5-1de5-4d7c-9004-a390147273ae'}
+[2024-12-04T23:57:42.463+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-12-04T23:57:42.530+0000] {logging_mixin.py:190} INFO - Task start:2024-11-26 15:13:11.273675+00:00 end:2024-12-04 23:57:42.461964+00:00 duration:722671.188289
+[2024-12-04T23:57:42.620+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): collect_data> dag:<DAG: class_act_7_pipeline> dagrun:<DagRun class_act_7_pipeline @ 2024-10-11 23:00:00+00:00: scheduled__2024-10-11T23:00:00+00:00, state:running, queued_at: 2024-11-26 15:12:28.250774+00:00. externally triggered: False>
+[2024-12-04T23:57:42.684+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'class_act_7_pipeline', 'Task Id': 'collect_data', 'Run Id': 'scheduled__2024-10-11T23:00:00+00:00', 'Hostname': 'b3594cb83583', 'External Executor Id': '7c7975a5-1de5-4d7c-9004-a390147273ae'}
+[2024-12-04T23:57:42.720+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:42.720+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=class_act_7_pipeline, task_id=collect_data, run_id=scheduled__2024-10-11T23:00:00+00:00, execution_date=20241011T230000, start_date=20241126T151311, end_date=20241204T235742
+[2024-12-04T23:57:43.405+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:43.404+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: class_act_7_pipeline.collect_data scheduled__2024-10-11T23:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2024-12-04T23:57:43.552+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:43.551+0000] {taskinstance.py:3313} ERROR - {'DAG Id': 'class_act_7_pipeline', 'Task Id': 'collect_data', 'Run Id': 'scheduled__2024-10-11T23:00:00+00:00', 'Hostname': 'b3594cb83583', 'External Executor Id': '7c7975a5-1de5-4d7c-9004-a390147273ae'}
+[2024-12-04T23:57:43.782+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-12-04T23:57:43.801+0000] {logging_mixin.py:190} INFO - Task start:2024-11-26 15:13:11.273675+00:00 end:2024-12-04 23:57:43.630944+00:00 duration:722672.357269
+[2024-12-04T23:57:43.805+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): collect_data> dag:<DAG: class_act_7_pipeline> dagrun:<DagRun class_act_7_pipeline @ 2024-10-11 23:00:00+00:00: scheduled__2024-10-11T23:00:00+00:00, state:running, queued_at: 2024-11-26 15:12:28.250774+00:00. externally triggered: False>
+[2024-12-04T23:57:43.823+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'class_act_7_pipeline', 'Task Id': 'collect_data', 'Run Id': 'scheduled__2024-10-11T23:00:00+00:00', 'Hostname': 'b3594cb83583', 'External Executor Id': '7c7975a5-1de5-4d7c-9004-a390147273ae'}
+[2024-12-04T23:57:43.850+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:43.849+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=class_act_7_pipeline, task_id=collect_data, run_id=scheduled__2024-10-11T23:00:00+00:00, execution_date=20241011T230000, start_date=20241126T151311, end_date=20241204T235743
+[2024-12-04T23:57:44.003+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:57:44.002+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: class_act_7_pipeline.collect_data scheduled__2024-10-11T23:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2024-12-04T23:57:44.019+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_pipeline.py took 4.771 seconds
+[2024-12-04T23:58:34.623+0000] {processor.py:186} INFO - Started process (PID=187) to work on /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:58:34.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_pipeline.py for tasks to queue
+[2024-12-04T23:58:34.638+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:34.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:58:34.878+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:58:34.822+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/airflow_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_pipeline.py", line 6, in <module>
+    from src.data_processing import preprocess_data
+  File "/opt/airflow/dags/src/data_processing.py", line 2, in <module>
+    from sklearn.preprocessing import StandardScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2024-12-04T23:58:34.912+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:58:35.076+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_pipeline.py took 0.492 seconds
+[2024-12-04T23:59:05.761+0000] {processor.py:186} INFO - Started process (PID=251) to work on /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:59:05.763+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_pipeline.py for tasks to queue
+[2024-12-04T23:59:05.765+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:59:05.765+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:59:05.855+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:59:05.836+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/airflow_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_pipeline.py", line 6, in <module>
+    from src.data_processing import preprocess_data
+  File "/opt/airflow/dags/src/data_processing.py", line 2, in <module>
+    from sklearn.preprocessing import StandardScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2024-12-04T23:59:05.862+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:59:05.908+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_pipeline.py took 0.163 seconds
+[2024-12-04T23:59:40.173+0000] {processor.py:186} INFO - Started process (PID=312) to work on /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:59:40.177+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_pipeline.py for tasks to queue
+[2024-12-04T23:59:40.181+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:59:40.180+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:59:40.368+0000] {logging_mixin.py:190} INFO - [2024-12-04T23:59:40.333+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/airflow_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_pipeline.py", line 6, in <module>
+    from src.data_processing import preprocess_data
+  File "/opt/airflow/dags/src/data_processing.py", line 2, in <module>
+    from sklearn.preprocessing import StandardScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2024-12-04T23:59:40.372+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_pipeline.py
+[2024-12-04T23:59:40.500+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_pipeline.py took 0.346 seconds

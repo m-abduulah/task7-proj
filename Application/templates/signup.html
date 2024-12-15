@@ -1,0 +1,176 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p {
+            margin-top: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="http://localhost:9876/signup" method="POST">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="http://localhost:9876/login">Login</a></p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #19335a;  /* Red background */
+            color: #ffffff;  /* White text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            position: relative;  /* To allow positioning of the background box */
+            width: 90%;
+            max-width: 400px;  /* Maximum width for the form */
+            padding: 40px;
+            background-color: #ffffff;  /* White background for the form */
+            border-radius: 20px;  /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+        }
+        .white-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            z-index: -1;  /* Placing the white box behind the content */
+        }
+        h1 {
+            color: #4675c0;  /* Red text for the title */
+            margin-bottom: 20px;
+            font-size: 24px; /* Adjusted font size for better readability */
+        }
+        label {
+            color: #333;  /* Dark grey color for readability */
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left; /* Ensure labels are aligned to the left */
+        }
+        input[type="email"], input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #4675c0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4675c0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #4675c0;
+        }
+        .link-group {
+            color: #19335a;  /* Change the color to match the theme (red) */
+            margin-top: 20px;
+            text-align: center; /* Ensure the link is centered */
+        }
+        .link-group a {
+            color: #19335a;  /* Link text color */
+            text-decoration: none;
+        }
+        .link-group a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="white-box"></div> <!-- White background box behind the form -->
+        <h1>Sign Up</h1>
+        <form action="http://localhost:9876/signup" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="link-group">Already have an account? <a href="http://localhost:9876/login">Login</a></p>
+    </div>
+</body>
+</html>
