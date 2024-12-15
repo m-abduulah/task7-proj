@@ -1,0 +1,46 @@
+schema: '2.0'
+stages:
+  fetch_data:
+    cmd: python airflow_pipeline\dags\src\data_collection.py
+    deps:
+    - path: airflow_pipeline\dags\src\data_collection.py
+      hash: md5
+      md5: 2fdddfb5a06f31491fc0299f36100858
+      size: 742
+    outs:
+    - path: datasets\data.csv
+      hash: md5
+      md5: 9a4ab547316959953c9bc4e5b11f1bc6
+      size: 26
+  process_data:
+    cmd: python airflow_pipeline\dags\src\data_processing.py
+    deps:
+    - path: airflow_pipeline\dags\src\data_processing.py
+      hash: md5
+      md5: 2d5ef71c6725d46f358ce6d69d78cb47
+      size: 624
+    - path: datasets\data.csv
+      hash: md5
+      md5: 9a4ab547316959953c9bc4e5b11f1bc6
+      size: 26
+    outs:
+    - path: datasets\processed_data.csv
+      hash: md5
+      md5: 36e88b0e444c213818fd2640b9a87b59
+      size: 56
+  model_training:
+    cmd: python src\training.py
+    deps:
+    - path: datasets\processed_data.csv
+      hash: md5
+      md5: 36e88b0e444c213818fd2640b9a87b59
+      size: 56
+    - path: src\training.py
+      hash: md5
+      md5: 8ab7c57cfb0f2291b347344200682f56
+      size: 515
+    outs:
+    - path: models\model.pkl
+      hash: md5
+      md5: b468374bda465fdff4b0bb5976e4c7f5
+      size: 532

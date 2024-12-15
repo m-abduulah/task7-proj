@@ -1,0 +1,8 @@
+/data
+.dvc
+Submission
+airflow_pipeline\.env
+airflow_pipeline\dags\__pycache__
+airflow_pipeline\dags\src\__pycache__
+airflow_pipeline\logs
+airflow_pipeline\plugins

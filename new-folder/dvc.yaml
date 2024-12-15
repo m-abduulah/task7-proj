@@ -1,0 +1,23 @@
+stages:
+  fetch_data:
+    cmd: python airflow_pipeline\dags\src\data_collection.py
+    deps:
+      - airflow_pipeline\dags\src\data_collection.py
+    outs:
+      - datasets\data.csv
+  process_data:
+    cmd: python airflow_pipeline\dags\src\data_processing.py
+    deps:
+      - airflow_pipeline\dags\src\data_processing.py
+      - datasets\data.csv
+    outs:
+      - datasets\processed_data.csv
+  model_training:
+    cmd: python src\training.py
+    deps:
+      - src\training.py
+      - datasets\processed_data.csv
+    outs:
+      - models\model.pkl:
+          cache: true
+         
