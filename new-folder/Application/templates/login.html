@@ -1,0 +1,155 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            margin-top: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="http://localhost:9876/login" method="POST">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="http://localhost:9876/signup">Sign Up</a></p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif; /* Consider using a more elegant font like 'Helvetica' or a Google Font like 'Roboto' */
+                background-color: #19335a; /* Same red background */
+                color: #ffffff; /* White text color for better readability */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+            h1 {
+                font-size: 24px; /* Adjusted font size */
+                margin-bottom: 20px;
+            }
+            form {
+                width: 90%; /* Adjusted for mobile responsiveness */
+                max-width: 300px; /* Maximum width */
+                padding: 20px;
+                text-align: center;
+            }
+            input {
+                width: 100%; /* Full width */
+                padding: 10px;
+                margin: 10px 0;
+                background: transparent; /* Transparent background */
+                border: none;
+                border-bottom: 2px solid #fff; /* White bottom border */
+                color: #fff; /* White text */
+                font-size: 16px;
+            }
+            button {
+                width: 100%;
+                padding: 12px;
+                margin-top: 20px;
+                background-color: #fff; /* White button background */
+                color: #19335a; /* Button text color */
+                border: none;
+                border-radius: 4px; /* Slight rounding of button corners */
+                cursor: pointer;
+                font-size: 16px; /* Matching font size */
+                font-weight: bold;
+            }
+            button:hover {
+                background-color: #8fc8eb; /* Light red for hover */
+            }
+            .checkbox-group {
+                color: #fff;
+                font-size: 14px;
+                text-align: left;
+                margin: 10px 0;
+            }
+            .link-group {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Login</h1>
+    <form action="http://localhost:9876/login" method="POST">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="http://localhost:9876/signup">Sign Up</a></p>
+</body>
+</html>
